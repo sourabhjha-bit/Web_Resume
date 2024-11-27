@@ -1,0 +1,84 @@
+
+form {
+    width: 100%;
+    max-width: 600px; 
+    margin: 28px auto; 
+    padding: 20px;
+    background-color: #667ab2;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading{
+    font-size: large;
+    text-align: center;
+    margin: 18px 0;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+
+.form-control label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #131212;
+}
+
+
+.typo {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease;
+}
+
+
+.typo:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+app-validation-msg {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+
+textarea.typo {
+    min-height: 100px;
+    resize: vertical;
+}
+
+
+.form-btn {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: rgb(240, 239, 239);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-btn:hover {
+    background-color: #0056b3;
+}
+
+
+.form-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Responsive span-2 style for larger forms */
+.form-control.span-2 {
+    grid-column: span 2;
+}

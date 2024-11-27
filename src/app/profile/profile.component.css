@@ -1,0 +1,11 @@
+.Profile_pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+img{
+    height: 260px;
+    border-radius: 50%;
+}

@@ -1,0 +1,32 @@
+<form [formGroup]="msgForm" (submit)="submit()" autocomplete="off">
+    <div class="heading">
+        <h2>Contact</h2>
+    </div>
+    <div class="form-control">
+        <label for="name">Name</label>
+        <input class="typo" type="text" id="name" formControlName="name" />
+
+        <app-validation-msg *ngIf="name?.invalid && name?.touched">
+            Please fill out this field.
+        </app-validation-msg>
+    </div>
+
+    <div class="form-control">
+        <label for="email">Email</label>
+        <input class="typo" type="email" id="email" formControlName="email" />
+
+        <app-validation-msg *ngIf="email?.invalid && email?.touched">
+            Please enter a valid email address.
+        </app-validation-msg>
+    </div>
+
+    <div class="form-control span-2">
+        <label for="message">Message</label>
+        <textarea class="typo" id="message" formControlName="message"></textarea>
+
+        <app-validation-msg *ngIf="msg?.invalid && msg?.touched">
+            Please fill out this field.
+        </app-validation-msg>
+    </div>
+
+    <button [disabled]="msgForm.invalid" appClick class="form-btn" type="submit">Submit</button>

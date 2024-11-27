@@ -1,0 +1,12 @@
+<div class="heading">
+    <h2>Technical Skills</h2>
+</div>
+<div class="skills-container">
+    <div class="skill-card" *ngFor="let skill of skills">
+      <div class="skill-name">{{ skill.name }}</div>
+      <div class="rating" [title]="'Proficiency: ' + skill.rating">
+        <div class="rating-bar" [ngStyle]="{ width: skill.rating * 20 + '%' }"></div>
+      </div>
+    </div>
+  </div>
+  

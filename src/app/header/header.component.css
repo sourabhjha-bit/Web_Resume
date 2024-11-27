@@ -1,0 +1,31 @@
+.header{
+    padding: 10px;
+    background-color: #283046;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details{
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   margin: 0.5rem 0;
+}
+
+p{
+    font-size: medium;
+    margin: 0 0.4rem;
+    padding: 0 0.5rem;
+}
+
+.name{
+    font-size: large;
+    margin-bottom: 6px;
+}
+
+a{
+    color: rgb(156, 196, 216);
+}

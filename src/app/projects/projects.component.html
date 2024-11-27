@@ -1,0 +1,20 @@
+<main id="project">
+    <h2>Projects</h2>
+</main>
+
+<ul class="project-list" *ngFor="let project of projects">
+    <li class="project">
+        <img [src]='project.img' alt="" class="img-cover">
+        <div class="content">
+            <h3 class="project-title">{{project.title}}</h3>
+            <p class="project-desc">
+                {{project.desc}}
+            </p>
+            <ul class="project-areas">
+                <li class="project-area" *ngFor="let area of project.areas">
+                    {{area}}
+                </li>
+            </ul>
+        </div>
+    </li>
+</ul>
